@@ -1,14 +1,11 @@
-const fs   = require('fs')
-const path = require('path')
+const fs      = require('fs')
+const path    = require('path')
+const process = require('process')
 
 module.exports = cdm
 
-const cdm = (path, cb) => {
+function cdm(path, cb) {
   fs.mkdir(path, (err) => {
-    if (err) {
-      fs.stat(path, (err, stats) => {
-        process.chdir(path)
-      })
-    }  
+    process.chdir(path)
   }) 
 }
