@@ -1,6 +1,6 @@
 {
   "name": "cdm",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "cd with optional mkdir",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,9 @@
     "make",
     "dir"
   ],
+  "bin": {
+    "cdm": "./index.js"
+  },
   "author": "Jon Kuperman",
   "license": "MIT",
   "bugs": {
